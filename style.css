@@ -1,4 +1,5 @@
 * {
+  cursor: url(image/cursor.png) 4 1, pointer;
   margin: 0;
   padding: 0;
 }
@@ -47,6 +48,10 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  transition: 1s;
+}
+.Header__button:hover {
+  background: rgb(235, 68, 63);
 }
 
 .Menu {
@@ -57,7 +62,16 @@ body {
   padding-bottom: 128px;
 }
 .Menu__items {
+  border: transparent;
+  border-radius: 16px;
   position: relative;
+  transition: 1s;
+  max-width: 379px;
+  max-height: 300px;
+}
+.Menu__items:hover {
+  border: 3px solid rgb(68, 210, 255);
+  border-radius: 16px;
 }
 .Menu__items_title {
   color: rgb(255, 255, 255);
