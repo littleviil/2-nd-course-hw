@@ -45,5 +45,31 @@
 
 
 //8
-let age = Number(prompt(`Сколько вам лет?`));
-alert(age);
+// let age = Number(prompt(`Сколько вам лет?`));
+// alert(age);
+
+
+// //9
+// let user = {
+//     name: 'Jimmy',
+//     age: 20,
+//     isAdmin: true
+// };
+
+// //9.1
+// user['city of residence'] = "Helsinki";
+
+// //9.2
+// user.age = 35;
+
+// //9.3
+// delete user['city of residence'];
+
+// //9.4
+// let info = prompt("Какую информацию хотите узнать о пользователе?");
+// alert(user[info]);
+
+
+//10
+let username = String(prompt(`Введите ваше имя: `));
+alert(`Привет, ${username}`);
