@@ -10,9 +10,14 @@
 
 
 //2
-let c = 2;
-if (c > 0 && c < 10) {
-    console.log('Верно');
-} else {
-    console.log('Неврно');
-}
+// let c = 2;
+// if (c > 0 && c < 10) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неврно');
+// }
+
+//3
+let d = 50;
+let e = 50;
+alert(d > 100 || e > 100 ? "Верно" : "Неверно");
