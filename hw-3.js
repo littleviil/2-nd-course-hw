@@ -17,7 +17,14 @@
 //     console.log('Неврно');
 // }
 
+
 //3
-let d = 50;
-let e = 50;
-alert(d > 100 || e > 100 ? "Верно" : "Неверно");
+// let d = 50;
+// let e = 50;
+// alert(d > 100 || e > 100 ? "Верно" : "Неверно");
+
+
+//4
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
