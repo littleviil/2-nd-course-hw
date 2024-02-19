@@ -93,3 +93,54 @@ body {
         }
     }
 }
+
+.footer {
+    height: 800px;
+    background: rgb(0, 9, 21);
+    display: flex;
+    gap: 135px;
+    align-items: center;
+
+    &__info {
+        max-width: 584px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &_title {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        &_paragraph {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+
+    &__button {
+        max-width: 234px;
+        padding: 13.3px 74.03px 13.3px 74.03px;
+        border-radius: 30px;
+        border: none;
+        background: rgb(156, 3, 50);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        transition: 1s;
+
+        &:hover {
+            background: rgb(235, 68, 63);
+        }
+    }
+}
