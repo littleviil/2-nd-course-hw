@@ -66,3 +66,15 @@
 // alert(num % 2 === 0 ? "Число четное" : "Число нечетное");
 
 //8
+function getDeviceType() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const Iphone = /mobile|iphone|ipad|ipod/i.test(userAgent);
+    const Android = /android/i.test(userAgent);
+   
+    if (Iphone) {
+      return 'Приложение для iOS установлено';
+    } else if(Android) {
+      return 'Приложение для Android установлено';
+    } else return 'undefined';
+  } 
+  console.log(getDeviceType());
