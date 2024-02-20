@@ -66,18 +66,15 @@
 // alert(num % 2 === 0 ? "Число четное" : "Число нечетное");
 
 //8
-// function getDeviceType() {
-//     const userAgent = navigator.userAgent.toLowerCase();
-//     const Iphone = /mobile|iphone|ipad|ipod/i.test(userAgent);
-//     const Android = /android/i.test(userAgent);
-   
-//     if (Iphone) {
-//       return 'Приложение для iOS установлено';
-//     } else if(Android) {
-//       return 'Приложение для Android установлено';
-//     } else return 'undefined';
-//   } 
-//   console.log(getDeviceType());
+let clientOS = prompt("Введите 0, если у вас Iphone, введите 1, если у вас Android");
+switch (clientOS) {
+    case '0':
+        console.log("Установите версию приложения для iOS по ссылке");
+        break;
+    case '1':
+        console.log("Установите версию приложения для Android по ссылке");
+        break;
+}
 
 
 //9
