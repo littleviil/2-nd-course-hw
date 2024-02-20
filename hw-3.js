@@ -78,21 +78,21 @@
 
 
 //9
-let clientOS = prompt("Введите 0, если у вас Iphone, введите 1, если у вас Android");
-let clientDeviceYear = prompt("Какого года производства ваш телефон?");
-switch (clientOS) {
-    case '0':
-        if (clientDeviceYear >= 2015) {
-            console.log("Установите версию приложения для iOS по ссылке");
-        } else {
-            console.log("Установите облегченную версию приложения для iOS по ссылке");
-        }
-        break;
-    case '1':
-        if (clientDeviceYear >= 2015) {
-            console.log("Установите версию приложения для Android по ссылке");
-        } else {
-            console.log("Установите облегченную версию приложения для Android по ссылке");
-        }
-        break;
-}
+// let clientOS = prompt("Введите 0, если у вас Iphone, введите 1, если у вас Android");
+// let clientDeviceYear = prompt("Какого года производства ваш телефон?");
+// switch (clientOS) {
+//     case '0':
+//         if (clientDeviceYear >= 2015) {
+//             console.log("Установите версию приложения для iOS по ссылке");
+//         } else {
+//             console.log("Установите облегченную версию приложения для iOS по ссылке");
+//         }
+//         break;
+//     case '1':
+//         if (clientDeviceYear >= 2015) {
+//             console.log("Установите версию приложения для Android по ссылке");
+//         } else {
+//             console.log("Установите облегченную версию приложения для Android по ссылке");
+//         }
+//         break;
+// }
