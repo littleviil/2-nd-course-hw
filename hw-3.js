@@ -61,7 +61,8 @@
 
 //7
 let num = Number(prompt("Введите любое число: "));
-
-alert(typeof num);
 console.log(num);
 alert(isNaN(num) ? "Вы ввели не числовое значение" : "Число обрабатывается");
+alert(num % 2 === 0 ? "Число четное" : "Число нечетное");
+
+//8
