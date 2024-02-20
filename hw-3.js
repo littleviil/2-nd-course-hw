@@ -1,6 +1,6 @@
 //1
 // let password = 'Skypro';
-// let password_user = prompt(`Введите пароль: `);
+// let password_user = prompt('Введите пароль: ');
 // if (password === password_user) {
 //     alert('Пароль введен верно');
 // } else {
@@ -59,4 +59,9 @@
 // }
 
 
-//6
+//7
+let num = Number(prompt("Введите любое число: "));
+
+alert(typeof num);
+console.log(num);
+alert(isNaN(num) ? "Вы ввели не числовое значение" : "Число обрабатывается");
