@@ -13,7 +13,7 @@ body {
   padding-right: calc(50% - 600px);
 }
 
-.Header {
+.header {
   background-image: url(image/main_bg.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -21,7 +21,7 @@ body {
   padding-top: 217.1px;
   padding-bottom: 493.29px;
 }
-.Header__title {
+.header__title {
   padding-bottom: 32px;
   max-width: 788.78px;
   font-size: 64px;
@@ -29,7 +29,7 @@ body {
   line-height: 78px;
   color: rgb(255, 255, 255);
 }
-.Header__text {
+.header__text {
   padding-bottom: 44px;
   max-width: 481px;
   font-size: 18px;
@@ -38,7 +38,7 @@ body {
   letter-spacing: 0px;
   color: rgb(255, 255, 255);
 }
-.Header__button {
+.header__button {
   padding: 13.3px 74.03px 13.3px 74.03px;
   border-radius: 30px;
   border: none;
@@ -50,18 +50,19 @@ body {
   line-height: 22px;
   transition: 1s;
 }
-.Header__button:hover {
+.header__button:hover {
   background: rgb(235, 68, 63);
 }
 
-.Menu {
+.menu {
   background-color: rgb(0, 9, 21);
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   padding-top: 128px;
   padding-bottom: 128px;
 }
-.Menu__items {
+.menu__items {
   border: transparent;
   border-radius: 16px;
   position: relative;
@@ -69,11 +70,11 @@ body {
   max-width: 379px;
   max-height: 300px;
 }
-.Menu__items:hover {
+.menu__items:hover {
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
 }
-.Menu__items_title {
+.menu__items_title {
   color: rgb(255, 255, 255);
   position: absolute;
   display: flex;
@@ -83,4 +84,136 @@ body {
   line-height: 32px;
   padding-bottom: 32px;
   padding-left: 32px;
+}
+.menu:hover {
+  gap: 29px;
+}
+
+.footer {
+  height: 800px;
+  background: rgb(0, 9, 21);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 135px;
+  align-items: center;
+}
+.footer__info {
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer__text_title {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+}
+.footer__text_paragraph {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 200;
+}
+.footer__button {
+  max-width: 234px;
+  padding: 13.3px 74.03px 13.3px 74.03px;
+  border-radius: 30px;
+  border: none;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  transition: 1s;
+}
+.footer__button:hover {
+  background: rgb(235, 68, 63);
+}
+.footer__img {
+  height: 333px;
+  width: 485px;
+  background-image: url(image/psp.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    max-width: 343px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 39px;
+    letter-spacing: 0px;
+  }
+  .header__text {
+    max-width: 343px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__items {
+    max-height: 300px;
+    max-width: 343px;
+  }
+  .menu__items_bd {
+    max-height: 300px;
+    max-width: 343px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer__info {
+    align-items: center;
+  }
+  .footer__text {
+    text-align: center;
+    max-width: 343px;
+  }
+  .footer__text_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+  }
+  .footer__text_paragraph {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+  .footer__img {
+    height: 246px;
+    width: 344px;
+    background-image: url(image/psp_mini.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
