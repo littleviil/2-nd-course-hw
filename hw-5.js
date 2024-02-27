@@ -27,13 +27,20 @@
 // alert(square(2));
 
 //4
-function age() {
-    let Age = Number(prompt("Сколько вам лет?"));
-    if (Age < 0) {
-        alert("Вы ввели неправильное значение");
-    } else if (Age >= 0 && Age <= 12) {
-        alert("Привет, друг!");
-    } else alert("Добро пожаловать!");
-}
+// function age() {
+//     let Age = Number(prompt("Сколько вам лет?"));
+//     if (Age < 0) {
+//         alert("Вы ввели неправильное значение");
+//     } else if (Age >= 0 && Age <= 12) {
+//         alert("Привет, друг!");
+//     } else alert("Добро пожаловать!");
+// }
 
-age();
+// age();
+
+//5
+function numbers(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return alert('Одно или оба значения не являются числом');
+    } else return a * b;
+}
