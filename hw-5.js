@@ -39,8 +39,19 @@
 // age();
 
 //5
-function numbers(a, b) {
-    if (isNaN(a) || isNaN(b)) {
-        return alert('Одно или оба значения не являются числом');
-    } else return a * b;
+// function numbers(a, b) {
+//     if (isNaN(a) || isNaN(b)) {
+//         return alert('Одно или оба значения не являются числом');
+//     } else return a * b;
+// }
+
+//6
+function inputNumber(a) {
+    // let a = Number(prompt("Введите число: "));
+    if (isNaN(a)) {
+        return console.log('Переданный параметр не является числом');
+    } else return console.log(`${a} в кубе равняется ${a ** 3}`);
+}
+for (let i = 0; i <= 10; i++) {
+    inputNumber(i);
 }
