@@ -13,7 +13,15 @@
 // console.log(comparison(3, 3));
 
 //2
-function parity(a) {
-    a % 2 == 0 ? alert("Число четное") : alert("Число нечетное");
+// function parity(a) {
+//     a % 2 == 0 ? alert("Число четное") : alert("Число нечетное");
+// }
+// parity(prompt("Введите число: "));
+
+//3
+function square(a) {
+    result = a ** 2;
+    console.log(result);
+    return result;
 }
-parity(prompt("Введите число: "));
+alert(square(2));
