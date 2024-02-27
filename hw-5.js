@@ -19,9 +19,21 @@
 // parity(prompt("Введите число: "));
 
 //3
-function square(a) {
-    result = a ** 2;
-    console.log(result);
-    return result;
+// function square(a) {
+//     result = a ** 2;
+//     console.log(result);
+//     return result;
+// }
+// alert(square(2));
+
+//4
+function age() {
+    let Age = Number(prompt("Сколько вам лет?"));
+    if (Age < 0) {
+        alert("Вы ввели неправильное значение");
+    } else if (Age >= 0 && Age <= 12) {
+        alert("Привет, друг!");
+    } else alert("Добро пожаловать!");
 }
-alert(square(2));
+
+age();
