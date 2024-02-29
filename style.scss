@@ -99,10 +99,9 @@ body {
     }
 }
 
-.footer {
+.section {
     height: 800px;
     background: rgb(0, 9, 21);
-    display: flex;
     flex-wrap: nowrap;
     gap: 135px;
     align-items: center;
@@ -112,6 +111,13 @@ body {
         display: flex;
         flex-direction: column;
         gap: 32px;
+
+        &_3 {
+            gap: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__text {
@@ -129,6 +135,13 @@ body {
             color: rgb(255, 255, 255);
             font-size: 18px;
             font-weight: 200;
+        }
+
+        &_3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
         }
     }
 
@@ -150,13 +163,58 @@ body {
         }
     }
 
-    &__img {
+    &__img_1 {
         height: 333px;
         width: 485px;
         background-image: url(image/psp.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+
+    &__img_2 {
+        height: 333px;
+        width: 485px;
+        background-image: url(image/psp_block_2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.block__1 {
+    display: flex;
+}
+
+.block__2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.block__3 {
+    display: flex;
+    background-image: url(image/bg_block_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &_text {
+        text-align: center;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: rgb(0, 9, 21);
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
     }
 }
 

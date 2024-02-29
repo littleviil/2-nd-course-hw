@@ -57,7 +57,7 @@
 // }
 
 //7
-let pi = 3.14159;
+let pi = 3.14;
 function getArea() {
     let S = pi * (this.radius ** 2);
     return S;
@@ -83,3 +83,4 @@ console.log(circle1.getPerimeter());
 
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+
