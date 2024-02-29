@@ -50,6 +50,7 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        padding-top: 51px;
 
         &__info {
             align-items: center;
@@ -75,12 +76,20 @@
         }
 
         &__img {
-            height: 246px;
-            width: 344px;
-            background-image: url(image/psp_mini.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            &_1 {
+                height: 246px;
+                width: 344px;
+            }
+
+            &_2 {
+                height: 246px;
+                width: 344px;
+            }
+
+            &_3 {
+                height: 246px;
+                width: 344px;
+            }
         }
     }
 }
