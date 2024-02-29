@@ -57,30 +57,47 @@
 // }
 
 //7
-let pi = 3.14;
-function getArea() {
-    let S = pi * (this.radius ** 2);
-    return S;
-}
-function getPerimeter() {
-    let P = 2 * pi * this.radius;
-    return P;
-}
+// let pi = 3.14;
+// function getArea() {
+//     let S = pi * (this.radius ** 2);
+//     return S;
+// }
+// function getPerimeter() {
+//     let P = 2 * pi * this.radius;
+//     return P;
+// }
 
-const circle1 = {
-    radius: 10,
-    getArea: getArea,
-    getPerimeter: getPerimeter,
-}
+// const circle1 = {
+//     radius: 10,
+//     getArea: getArea,
+//     getPerimeter: getPerimeter,
+// }
 
-const circle2 = {
-    radius: 4,
-    getArea, getArea,
-    getPerimeter: getPerimeter,
-}
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
+// const circle2 = {
+//     radius: 4,
+//     getArea, getArea,
+//     getPerimeter: getPerimeter,
+// }
+// console.log(circle1.getArea());
+// console.log(circle1.getPerimeter());
 
-console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+// console.log(circle2.getArea());
+// console.log(circle2.getPerimeter());
+
+//8
+function season() {
+    let month = Number(prompt("Введите номер месяца: "));
+    if ((month > 0 && month <= 2) || month === 12) {
+        console.log("Зима");
+    }
+    else if ((month > 2 && month <= 5)) {
+        console.log("Весна");
+    }
+    else if ((month > 5 && month <= 8)) {
+        console.log("Лето");
+    }
+    else if ((month > 8 && month <= 11)) {
+        console.log("Осень");
+    } else console.log("Такого месяца не существует");
+}
 
