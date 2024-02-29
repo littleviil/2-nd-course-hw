@@ -46,12 +46,40 @@
 // }
 
 //6
-function inputNumber(a) {
-    // let a = Number(prompt("Введите число: "));
-    if (isNaN(a)) {
-        return console.log('Переданный параметр не является числом');
-    } else return console.log(`${a} в кубе равняется ${a ** 3}`);
+// function inputNumber(a) {
+//     // let a = Number(prompt("Введите число: "));
+//     if (isNaN(a)) {
+//         return console.log('Переданный параметр не является числом');
+//     } else return console.log(`${a} в кубе равняется ${a ** 3}`);
+// }
+// for (let i = 0; i <= 10; i++) {
+//     inputNumber(i);
+// }
+
+//7
+let pi = 3.14159;
+function getArea() {
+    let S = pi * (this.radius ** 2);
+    return S;
 }
-for (let i = 0; i <= 10; i++) {
-    inputNumber(i);
+function getPerimeter() {
+    let P = 2 * pi * this.radius;
+    return P;
 }
+
+const circle1 = {
+    radius: 10,
+    getArea: getArea,
+    getPerimeter: getPerimeter,
+}
+
+const circle2 = {
+    radius: 4,
+    getArea, getArea,
+    getPerimeter: getPerimeter,
+}
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
