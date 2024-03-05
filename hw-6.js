@@ -16,17 +16,24 @@
 // console.log(array_3.join(' '));
 
 //4
-let array_4 = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-]
-let k = 1;
-for (let i = 0; i < array_4.length; i++) {
-    console.log(`Блок ${k}: `);
-    for (let j = 0; j < 3; j++) {
-        console.log(`${array_4[j]}`);
-    }
-    console.log(`\n`);
-    k++;
+// let array_4 = [
+//     [1, 1, 1],
+//     [1, 1, 1],
+//     [1, 1, 1]
+// ]
+// let k = 1;
+// for (let i = 0; i < array_4.length; i++) {
+//     console.log(`Блок ${k}: `);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`${array_4[j]}`);
+//     }
+//     console.log(`\n`);
+//     k++;
+// }
+
+//5
+let array_5 = [1, 1, 1];
+for (let i = 0; i < 3; i++) {
+    array_5.push(2);
 }
+console.log(array_5);
