@@ -8,5 +8,9 @@
 // }
 
 //2
-let array_2 = [1, 5, 4, 10, 0, 3];
-console.log(array_2.indexOf(4));
+// let array_2 = [1, 5, 4, 10, 0, 3];
+// console.log(array_2.indexOf(4));
+
+//3
+let array_3 = [1, 3, 5, 10, 20];
+console.log(array_3.join(' '));
