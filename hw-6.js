@@ -80,16 +80,26 @@
 //Не знаю, как сделать без создания новой строки
 
 //9
-let array_9 = [
-    [1, 2, 3],
-    [4, 5, 6]
-];
-let i = 0;
-for (let j = 3; j < 6; j++) {
-    array_9[i][j] = array_9[i + 1][j - 3];
-    //console.log(array_9[i][j]);
-}
-array_9.pop();
-for (let j = 0; j < array_9.length; j++) {
-    console.log(array_9[j]);
+// let array_9 = [
+//     [1, 2, 3],
+//     [4, 5, 6]
+// ];
+// let i = 0;
+// for (let j = 3; j < 6; j++) {
+//     array_9[i][j] = array_9[i + 1][j - 3];
+//     //console.log(array_9[i][j]);
+// }
+// array_9.pop();
+// for (let j = 0; j < array_9.length; j++) {
+//     console.log(array_9[j]);
+// }
+
+//10
+const generateArray = (length, max) => (
+    [...new Array(length)]
+        .map(() => Math.round(Math.random() * max))
+);
+const array_10 = generateArray(10, 10);
+for (let i = 0; i < array_10.length - 1; i++) {
+    console.log(`Сумма чисел ${array_10[i]} и ${array_10[i + 1]} = ${array_10[i] + array_10[i + 1]}`);
 }
