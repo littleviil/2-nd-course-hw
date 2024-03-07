@@ -74,8 +74,22 @@
 // } else { alert("Не угадал"); }
 
 //8
-let str = 'abcdef';
-let strRev = str.split('').reverse().join('');
-alert(`${typeof (str)}, ${strRev}`);
+// let str = 'abcdef';
+// let strRev = str.split('').reverse().join('');
+// alert(`${typeof (str)}, ${strRev}`);
 //Не знаю, как сделать без создания новой строки
 
+//9
+let array_9 = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+let i = 0;
+for (let j = 3; j < 6; j++) {
+    array_9[i][j] = array_9[i + 1][j - 3];
+    //console.log(array_9[i][j]);
+}
+array_9.pop();
+for (let j = 0; j < array_9.length; j++) {
+    console.log(array_9[j]);
+}
