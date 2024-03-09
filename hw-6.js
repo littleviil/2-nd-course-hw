@@ -95,11 +95,25 @@
 // }
 
 //10
+// const generateArray = (length, max) => (
+//     [...new Array(length)]
+//         .map(() => Math.round(Math.random() * max))
+// );
+// const array_10 = generateArray(10, 10);
+// for (let i = 0; i < array_10.length - 1; i++) {
+//     console.log(`Сумма чисел ${array_10[i]} и ${array_10[i + 1]} = ${array_10[i] + array_10[i + 1]}`);
+// }
+
+//11
+function square(let num) {
+    return num ** 2;
+}
 const generateArray = (length, max) => (
     [...new Array(length)]
         .map(() => Math.round(Math.random() * max))
 );
-const array_10 = generateArray(10, 10);
-for (let i = 0; i < array_10.length - 1; i++) {
-    console.log(`Сумма чисел ${array_10[i]} и ${array_10[i + 1]} = ${array_10[i] + array_10[i + 1]}`);
+const array_11 = generateArray(10, 50);
+square(array_11);
+for (let i = 0; i < array_11.length; i++) {
+    console.log(`Квадрат числа ${Math.sqrt(array_11[i])}: ${array_11[i]}`);
 }
