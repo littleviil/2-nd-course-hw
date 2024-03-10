@@ -19,19 +19,11 @@
 let array_4 = [];
 for (let i = 0; i < 3; i++) {
     array_4[i] = [];
+    console.log(`Блок ${i + 1}: `);
     for (let j = 0; j < 3; j++) {
         array_4[i].push(1);
     }
-}
-
-let k = 1;
-for (let i = 0; i < array_4.length; i++) {
-    console.log(`Блок ${k}: `);
-    for (let j = 0; j < 3; j++) {
-        console.log(`${array_4[j]}`);
-    }
-    console.log(`\n`);
-    k++;
+    console.log(`${array_4[i]}`);
 }
 
 //5
