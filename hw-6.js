@@ -16,22 +16,20 @@
 // console.log(array_3.join(' '));
 
 //4
-let array_4 = [];
-for (let i = 0; i < 3; i++) {
-    array_4[i] = [];
-    console.log(`Блок ${i + 1}: `);
-    for (let j = 0; j < 3; j++) {
-        array_4[i].push(1);
-    }
-    console.log(`${array_4[i]}`);
-}
+// let array_4 = [];
+// for (let i = 0; i < 3; i++) {
+//     array_4[i] = [];
+//     console.log(`Блок ${i + 1}: `);
+//     for (let j = 0; j < 3; j++) {
+//         array_4[i].push(1);
+//     }
+//     console.log(`${array_4[i]}`);
+// }
 
 //5
-// let array_5 = [1, 1, 1];
-// for (let i = 0; i < 3; i++) {
-//     array_5.push(2);
-// }
-// console.log(array_5);
+let array_5 = [1, 1, 1];
+array_5.push(2, 2, 2);
+console.log(array_5);
 
 //6
 // let array_6 = [9, 8, 7, 'a', 6, 5];
