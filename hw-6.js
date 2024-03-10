@@ -118,17 +118,23 @@
 // square(array_11);
 
 //12
-function Lenght(array) {
-    const NewArray = array.map(item => item.length);
-    // for (let i = 0; i < NewArray.lenght; i++) {
-    //     console.log(NewArray[i]);
-    // }
+// function Lenght(array) {
+//     const NewArray = array.map(item => item.length);
+//     console.log(NewArray);
+//     return NewArray;
+// }
+// let array_12 = [
+//     'oooffooffo',
+//     'lslsls',
+//     'alalalal'
+// ];
+// Lenght(array_12);
+
+//13
+function minus(array) {
+    const NewArray = array.filter(item => item < 0);
     console.log(NewArray);
     return NewArray;
 }
-let array_12 = [
-    'oooffooffo',
-    'lslsls',
-    'alalalal'
-];
-Lenght(array_12);
+let array_13 = [-1, 10, 34, -11, 4];
+minus(array_13);
