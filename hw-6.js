@@ -131,10 +131,25 @@
 // Lenght(array_12);
 
 //13
-function minus(array) {
-    const NewArray = array.filter(item => item < 0);
-    console.log(NewArray);
+// function minus(array) {
+//     const NewArray = array.filter(item => item < 0);
+//     console.log(NewArray);
+//     return NewArray;
+// }
+// let array_13 = [-1, 10, 34, -11, 4];
+// minus(array_13);
+
+//14
+const generateArray = (length, max) => (
+    [...new Array(length)]
+        .map(() => Math.round(Math.random() * max))
+);
+
+function even(array) {
+    const NewArray = array.filter(item => item % 2 == 0);
+    console.log(`Сортированный массив: ${NewArray}`)
     return NewArray;
 }
-let array_13 = [-1, 10, 34, -11, 4];
-minus(array_13);
+const array_14 = generateArray(10, 10);
+console.log(`Исходный массив: ${array_14}`);
+even(array_14);
