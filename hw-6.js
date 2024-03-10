@@ -38,31 +38,30 @@
 // console.log(value);
 
 //7
-let array_7 = [9, 8, 7, 6, 5];
-let num = Number(prompt("Введите возможное число массива"));
+// let array_7 = [9, 8, 7, 6, 5];
+// let num = Number(prompt("Введите возможное число массива"));
 
-//Первая задумка
-let done = 0;
-for (let i = 0; i < array_7.length; i++) {
-    if (array_7[i] == num) {
-        alert("Угадал");
-        done = 1;
-    }
-}
-if (done === 0) {
-    alert("Не угадал");
-}
+// //Первая задумка
+// let done = 0;
+// for (let i = 0; i < array_7.length; i++) {
+//     if (array_7[i] == num) {
+//         alert("Угадал");
+//         done = 1;
+//     }
+// }
+// if (done === 0) {
+//     alert("Не угадал");
+// }
 
-//Подсказка из дз
-if (array_7.includes(num) == true) {
-    alert("Угадал");
-} else { alert("Не угадал"); }
+// //Подсказка из дз
+// if (array_7.includes(num) == true) {
+//     alert("Угадал");
+// } else { alert("Не угадал"); }
 
 //8
-// let str = 'abcdef';
-// let strRev = str.split('').reverse().join('');
-// alert(`${typeof (str)}, ${strRev}`);
-//Не знаю, как сделать без создания новой строки
+let str = 'abcdef';
+let strRev = str.split('').reverse().join('');
+console.log(strRev);
 
 //9
 // let array_9 = [
