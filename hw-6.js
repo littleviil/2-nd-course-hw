@@ -32,31 +32,31 @@
 // console.log(array_5);
 
 //6
-let array_6 = [9, 8, 7, 'a', 6, 5];
-const value = array_6.filter(array_val => array_val != 'a');
-value.sort();
-console.log(value);
+// let array_6 = [9, 8, 7, 'a', 6, 5];
+// const value = array_6.filter(array_val => array_val != 'a');
+// value.sort();
+// console.log(value);
 
 //7
-// let array_7 = [9, 8, 7, 6, 5];
-// let num = Number(prompt("Введите возможное число массива"));
+let array_7 = [9, 8, 7, 6, 5];
+let num = Number(prompt("Введите возможное число массива"));
 
-// //Первая задумка
-// let done = 0;
-// for (let i = 0; i < array_7.length; i++) {
-//     if (array_7[i] == num) {
-//         alert("Угадал");
-//         done = 1;
-//     }
-// }
-// if (done === 0) {
-//     alert("Не угадал");
-// }
+//Первая задумка
+let done = 0;
+for (let i = 0; i < array_7.length; i++) {
+    if (array_7[i] == num) {
+        alert("Угадал");
+        done = 1;
+    }
+}
+if (done === 0) {
+    alert("Не угадал");
+}
 
-// //Подсказка из дз
-// if (array_7.includes(num) === true) {
-//     alert("Угадал");
-// } else { alert("Не угадал"); }
+//Подсказка из дз
+if (array_7.includes(num) == true) {
+    alert("Угадал");
+} else { alert("Не угадал"); }
 
 //8
 // let str = 'abcdef';
