@@ -16,20 +16,23 @@
 // console.log(array_3.join(' '));
 
 //4
-// let array_4 = [
-//     [1, 1, 1],
-//     [1, 1, 1],
-//     [1, 1, 1]
-// ]
-// let k = 1;
-// for (let i = 0; i < array_4.length; i++) {
-//     console.log(`Блок ${k}: `);
-//     for (let j = 0; j < 3; j++) {
-//         console.log(`${array_4[j]}`);
-//     }
-//     console.log(`\n`);
-//     k++;
-// }
+let array_4 = [];
+for (let i = 0; i < 3; i++) {
+    array_4[i] = [];
+    for (let j = 0; j < 3; j++) {
+        array_4[i].push(1);
+    }
+}
+
+let k = 1;
+for (let i = 0; i < array_4.length; i++) {
+    console.log(`Блок ${k}: `);
+    for (let j = 0; j < 3; j++) {
+        console.log(`${array_4[j]}`);
+    }
+    console.log(`\n`);
+    k++;
+}
 
 //5
 // let array_5 = [1, 1, 1];
@@ -155,20 +158,20 @@
 // even(array_14);
 
 //15
-const generateArray = (length, max) => (
-    [...new Array(length)]
-        .map(() => Math.round(Math.random() * max))
-);
+// const generateArray = (length, max) => (
+//     [...new Array(length)]
+//         .map(() => Math.round(Math.random() * max))
+// );
 
-function arithmeticMean(array) {
-    let sum = 0, k = 0;
-    for (let i = 0; i < array.length; i++) {
-        sum += array[i];
-        k++;
-    }
-    let arithmeticM = sum / k;
-    return (arithmeticM);
-}
+// function arithmeticMean(array) {
+//     let sum = 0, k = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         sum += array[i];
+//         k++;
+//     }
+//     let arithmeticM = sum / k;
+//     return (arithmeticM);
+// }
 
-const array_15 = generateArray(6, 10);
-console.log(`Массив: ${array_15} \nСреднее арифетическое: ${arithmeticMean(array_15)}`);
+// const array_15 = generateArray(6, 10);
+// console.log(`Массив: ${array_15} \nСреднее арифетическое: ${arithmeticMean(array_15)}`);
