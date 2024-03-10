@@ -140,16 +140,35 @@
 // minus(array_13);
 
 //14
+// const generateArray = (length, max) => (
+//     [...new Array(length)]
+//         .map(() => Math.round(Math.random() * max))
+// );
+
+// function even(array) {
+//     const NewArray = array.filter(item => item % 2 == 0);
+//     console.log(`Сортированный массив: ${NewArray}`)
+//     return NewArray;
+// }
+// const array_14 = generateArray(10, 10);
+// console.log(`Исходный массив: ${array_14}`);
+// even(array_14);
+
+//15
 const generateArray = (length, max) => (
     [...new Array(length)]
         .map(() => Math.round(Math.random() * max))
 );
 
-function even(array) {
-    const NewArray = array.filter(item => item % 2 == 0);
-    console.log(`Сортированный массив: ${NewArray}`)
-    return NewArray;
+function arithmeticMean(array) {
+    let sum = 0, k = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+        k++;
+    }
+    let arithmeticM = sum / k;
+    return (arithmeticM);
 }
-const array_14 = generateArray(10, 10);
-console.log(`Исходный массив: ${array_14}`);
-even(array_14);
+
+const array_15 = generateArray(6, 10);
+console.log(`Массив: ${array_15} \nСреднее арифетическое: ${arithmeticMean(array_15)}`);
