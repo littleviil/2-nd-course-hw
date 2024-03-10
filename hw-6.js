@@ -64,12 +64,12 @@
 // console.log(strRev);
 
 //9
-let array_9 = [
-    [1, 2, 3],
-    [4, 5, 6]
-];
-array_9.flat(Infinity);
-console.log(`${array_9}`);
+// let array_9 = [
+//     [1, 2, 3],
+//     [4, 5, 6]
+// ];
+// array_9.flat(Infinity);
+// console.log(`${array_9}`);
 
 //10
 // const generateArray = (length, max) => (
@@ -82,17 +82,19 @@ console.log(`${array_9}`);
 // }
 
 //11
-// function square(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         console.log(`Квадрат числа ${array[i]}: ${array[i] ** 2}`);
-//     }
-// }
-// const generateArray = (length, max) => (
-//     [...new Array(length)]
-//         .map(() => Math.round(Math.random() * max))
-// );
-// const array_11 = generateArray(10, 10);
-// square(array_11);
+function square(array) {
+    for (let i = 0; i < array.length; i++) {
+        array[i] **= 2;
+    }
+    return array;
+}
+const generateArray = (length, max) => (
+    [...new Array(length)]
+        .map(() => Math.round(Math.random() * max))
+);
+const array_11 = generateArray(10, 10);
+console.log(array_11);
+console.log(square(array_11));
 
 //12
 // function Lenght(array) {
