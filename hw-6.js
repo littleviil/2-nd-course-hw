@@ -105,15 +105,30 @@
 // }
 
 //11
-function square(let num) {
-    return num ** 2;
+// function square(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         console.log(`Квадрат числа ${array[i]}: ${array[i] ** 2}`);
+//     }
+// }
+// const generateArray = (length, max) => (
+//     [...new Array(length)]
+//         .map(() => Math.round(Math.random() * max))
+// );
+// const array_11 = generateArray(10, 10);
+// square(array_11);
+
+//12
+function Lenght(array) {
+    const NewArray = array.map(item => item.length);
+    // for (let i = 0; i < NewArray.lenght; i++) {
+    //     console.log(NewArray[i]);
+    // }
+    console.log(NewArray);
+    return NewArray;
 }
-const generateArray = (length, max) => (
-    [...new Array(length)]
-        .map(() => Math.round(Math.random() * max))
-);
-const array_11 = generateArray(10, 50);
-square(array_11);
-for (let i = 0; i < array_11.length; i++) {
-    console.log(`Квадрат числа ${Math.sqrt(array_11[i])}: ${array_11[i]}`);
-}
+let array_12 = [
+    'oooffooffo',
+    'lslsls',
+    'alalalal'
+];
+Lenght(array_12);
