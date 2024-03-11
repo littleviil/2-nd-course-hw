@@ -18,8 +18,19 @@
 // console.log(Math.min(...arr_4), Math.max(...arr_4));
 
 //5
-function random() {
-    let num_5 = (Math.random() * 10) + 1;
-    console.log(Math.floor(num_5));
+// function random() {
+//     let num_5 = (Math.random() * 10) + 1;
+//     console.log(Math.floor(num_5));
+// }
+// random();
+
+//6
+function randomArr(num) {
+    let arr_6 = [];
+    for (let i = 0; i < Math.floor(num / 2); i++) {
+        arr_6[i] = Math.round(Math.random() * num);
+    }
+    return arr_6;
 }
-random();
+console.log(randomArr(10));
+console.log(randomArr(11));
