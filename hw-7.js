@@ -36,20 +36,34 @@
 // console.log(randomArr(11));
 
 //7
-function range(num_1, num_2) {
-    let max = 0, min = 0, randomNum = 0;
-    if (num_1 > num_2) {
-        max = num_1;
-        min = num_2;
-        return randomNum = Math.round((Math.random() * (max - min + 1)) + min);
-    } else if (num_1 < num_2) {
-        max = num_2;
-        min = num_1;
-        return randomNum = Math.round((Math.random() * (max - min + 1)) + min);
-    } else {
-        return 'Числа одинаковые, ошибка';
-    }
-}
-console.log(range(4, 7));
-console.log(range(9, 9));
-console.log(range(-100, 100));
+// function range(num_1, num_2) {
+//     let max = 0, min = 0, randomNum = 0;
+//     if (num_1 > num_2) {
+//         max = num_1;
+//         min = num_2;
+//         return randomNum = Math.round((Math.random() * (max - min + 1)) + min);
+//     } else if (num_1 < num_2) {
+//         max = num_2;
+//         min = num_1;
+//         return randomNum = Math.round((Math.random() * (max - min + 1)) + min);
+//     } else {
+//         return 'Числа одинаковые, ошибка';
+//     }
+// }
+// console.log(range(4, 7));
+// console.log(range(9, 9));
+// console.log(range(-100, 100));
+
+//8
+let currentDate = new Date();
+console.log(currentDate);
+
+let myDate = new Date();
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+    "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+let fullDate = "Сегодня: " + days[myDate.getDay()] + " - " + myDate.getDate() +
+    "." + (myDate.getMonth() + 1) +
+    "." + myDate.getFullYear();
+console.log(fullDate);
