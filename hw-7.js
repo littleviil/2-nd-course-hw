@@ -63,7 +63,30 @@ const days = ["Воскресенье", "Понедельник", "Вторни�
     "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
     "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
 let fullDate = "Сегодня: " + days[myDate.getDay()] + " - " + myDate.getDate() +
     "." + (myDate.getMonth() + 1) +
     "." + myDate.getFullYear();
 console.log(fullDate);
+
+//9
+// let set_day = 73;
+// let newDate = "Через " + set_day + " будет: " + currentDate.setDate(days + set_day);
+// console.log(newDate);
+
+//10
+function dayMonthYear(Date){
+    let dayMonthYearDate = 
+    Date.getDate() +
+    "." + (Date.getMonth() + 1) +
+    "." + Date.getFullYear();
+    return dayMonthYearDate;
+}
+function hoursMinSec(Date){
+    let hoursMinSecDate = 
+    Date.getHours() +
+    ":" + Date.getMinutes() +
+    ":" + Date.getSeconds();
+    return hoursMinSecDate;
+}
+console.log(`Дата: ${dayMonthYear(currentDate)} \nВремя: ${hoursMinSec(currentDate)}`);
