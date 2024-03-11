@@ -25,12 +25,31 @@
 // random();
 
 //6
-function randomArr(num) {
-    let arr_6 = [];
-    for (let i = 0; i < Math.floor(num / 2); i++) {
-        arr_6[i] = Math.round(Math.random() * num);
+// function randomArr(num) {
+//     let arr_6 = [];
+//     for (let i = 0; i < Math.floor(num / 2); i++) {
+//         arr_6[i] = Math.round(Math.random() * num);
+//     }
+//     return arr_6;
+// }
+// console.log(randomArr(10));
+// console.log(randomArr(11));
+
+//7
+function range(num_1, num_2) {
+    let max = 0, min = 0, randomNum = 0;
+    if (num_1 > num_2) {
+        max = num_1;
+        min = num_2;
+        return randomNum = Math.round((Math.random() * (max - min + 1)) + min);
+    } else if (num_1 < num_2) {
+        max = num_2;
+        min = num_1;
+        return randomNum = Math.round((Math.random() * (max - min + 1)) + min);
+    } else {
+        return 'Числа одинаковые, ошибка';
     }
-    return arr_6;
 }
-console.log(randomArr(10));
-console.log(randomArr(11));
+console.log(range(4, 7));
+console.log(range(9, 9));
+console.log(range(-100, 100));
