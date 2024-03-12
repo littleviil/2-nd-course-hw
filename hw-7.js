@@ -73,6 +73,7 @@ console.log(fullDate);
 // let set_day = 73;
 // let newDate = "Через " + set_day + " будет: " + currentDate.setDate(days + set_day);
 // console.log(newDate);
+// Не понимаю, как сделать, решение пока не нашла
 
 //10
 function dayMonthYear(Date) {
