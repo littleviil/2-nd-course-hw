@@ -110,9 +110,10 @@ function season() {
 
 function rememberWord() {
     const wordArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-    alert(`Запомни слова: ${wordArr}\nВведите все слова, которые запомните в следующем окне, удачи!`);
+
+    alert(`Запомни слова: ${wordArr.sort(() => Math.random() - 0.5)}\nВведите все слова, которые запомните в следующем окне, удачи!`);
     let userStr = prompt('Введите слова через пробел, порядок неважен');
-    let userWordArr = userStr.split(", ");
+    let userWordArr = userStr.split(" ");
     console.log(userWordArr);
     let k = 0;
     for (let i = 0; i < wordArr.length; i++) {
@@ -126,4 +127,4 @@ function rememberWord() {
         alert('Вы отгадали все слова, поздравляем!');
     } else { alert(`Вы отгадали столько слов: ${k}\nВсего слов было: ${wordArr.length}\nПопробуйте снова!`) }
 }
-//Яблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин
+//Яблоко Груша Дыня Виноград Персик Апельсин Мандарин
