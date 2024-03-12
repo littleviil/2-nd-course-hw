@@ -75,18 +75,55 @@ console.log(fullDate);
 // console.log(newDate);
 
 //10
-function dayMonthYear(Date){
-    let dayMonthYearDate = 
-    Date.getDate() +
-    "." + (Date.getMonth() + 1) +
-    "." + Date.getFullYear();
+function dayMonthYear(Date) {
+    let dayMonthYearDate =
+        Date.getDate() +
+        "." + (Date.getMonth() + 1) +
+        "." + Date.getFullYear();
     return dayMonthYearDate;
 }
-function hoursMinSec(Date){
-    let hoursMinSecDate = 
-    Date.getHours() +
-    ":" + Date.getMinutes() +
-    ":" + Date.getSeconds();
+function hoursMinSec(Date) {
+    let hoursMinSecDate =
+        Date.getHours() +
+        ":" + Date.getMinutes() +
+        ":" + Date.getSeconds();
     return hoursMinSecDate;
 }
 console.log(`Дата: ${dayMonthYear(currentDate)} \nВремя: ${hoursMinSec(currentDate)}`);
+
+//Кнопки на сайте
+function season() {
+    let month = Number(prompt("Введите номер месяца: "));
+    if ((month > 0 && month <= 2) || month === 12) {
+        console.log("Зима");
+    }
+    else if ((month > 2 && month <= 5)) {
+        console.log("Весна");
+    }
+    else if ((month > 5 && month <= 8)) {
+        console.log("Лето");
+    }
+    else if ((month > 8 && month <= 11)) {
+        console.log("Осень");
+    } else console.log("Такого месяца не существует");
+}
+
+function rememberWord() {
+    const wordArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    alert(`Запомни слова: ${wordArr}\nВведите все слова, которые запомните в следующем окне, удачи!`);
+    let userStr = prompt('Введите слова через пробел, порядок неважен');
+    let userWordArr = userStr.split(", ");
+    console.log(userWordArr);
+    let k = 0;
+    for (let i = 0; i < wordArr.length; i++) {
+        for (let j = 0; j < userWordArr.length; j++) {
+            if (userWordArr[j].toLowerCase() === wordArr[i].toLowerCase()) {
+                k++;
+            } else continue;
+        }
+    }
+    if (k == wordArr.length) {
+        alert('Вы отгадали все слова, поздравляем!');
+    } else { alert(`Вы отгадали столько слов: ${k}\nВсего слов было: ${wordArr.length}\nПопробуйте снова!`) }
+}
+//Яблоко, Груша, Дыня, Виноград, Персик, Апельсин, Мандарин
