@@ -54,17 +54,17 @@ const people_2 = [
 console.log(filter(people_2, isMale));
 
 //3
-// const timer = () => {
-//     const time_1s = setInterval(() => {
-//         let currentDay = new Date();
-//         console.log(currentDay);
-//     }, 1000);
+const timer = () => {
+    const time_1s = setInterval(() => {
+        let currentDay = new Date();
+        console.log(currentDay);
+    }, 1000);
 
-//     setTimeout(() => {
-//         clearInterval(time_1s)
-//         console.log("30 секунд прошло")
-//     }, 30000);
-// }
+    setTimeout(() => {
+        clearInterval(time_1s)
+        console.log("30 секунд прошло")
+    }, 30000);
+}
 
 // timer();
 
@@ -75,4 +75,18 @@ function delayForSecond(callback) {
 
 delayForSecond(function () {
     console.log('Привет, Глеб!');
-})
+});
+
+//5
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); }
+    }, 1000)
+}
+
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi('Глеб'));
