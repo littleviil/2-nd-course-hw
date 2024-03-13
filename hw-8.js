@@ -51,4 +51,20 @@ const people_2 = [
     { name: 'Оксана', gender: 'female' }
 ];
 
-console.log(filter(people_2, isMale)); 
+console.log(filter(people_2, isMale));
+
+//3
+let currentDay = new Date();
+
+const timer = (currentDay) => {
+    const time_1s = setInterval(() => {
+        console.log(currentDay);
+    }, 1000);
+
+    setTimeout(() => {
+        clearInterval(time_1s)
+        console.log("30 секунд прошло")
+    }, 30000);
+}
+
+timer(currentDay);
