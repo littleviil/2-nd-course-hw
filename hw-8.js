@@ -54,10 +54,9 @@ const people_2 = [
 console.log(filter(people_2, isMale));
 
 //3
-let currentDay = new Date();
-
-const timer = (currentDay) => {
+const timer = () => {
     const time_1s = setInterval(() => {
+        let currentDay = new Date();
         console.log(currentDay);
     }, 1000);
 
@@ -67,4 +66,14 @@ const timer = (currentDay) => {
     }, 30000);
 }
 
-timer(currentDay);
+timer();
+
+//4
+// function delayForSecond(callback) {
+//     // Код писать можно только внутри этой функции
+//    callback();
+// }
+
+// delayForSecond(function () {
+//    console.log('Привет, Глеб!');
+// })
