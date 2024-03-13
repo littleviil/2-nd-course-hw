@@ -66,7 +66,7 @@ const timer = () => {
     }, 30000);
 }
 
-// timer();
+timer();
 
 //4
 function delayForSecond(callback) {
@@ -78,7 +78,7 @@ delayForSecond(function () {
 });
 
 //5
-function delayForSecond(cb) {
+function delayForSecond_2(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
         if (cb) { cb(); }
@@ -89,4 +89,4 @@ function sayHi(name) {
     console.log(`Привет, ${name}!`);
 }
 
-delayForSecond(() => sayHi('Глеб'));
+delayForSecond_2(() => sayHi('Глеб'));
