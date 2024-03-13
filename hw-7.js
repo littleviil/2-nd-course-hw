@@ -4,7 +4,7 @@ console.log(str_1.toUpperCase());
 
 //2
 function search(array, str) {
-    return array.filter(string => string.toLowerCase(str).startsWith(str));
+    return array.filter(string => string.toLowerCase().startsWith(str.toLowerCase()));
 }
 console.log(search(['Яблоко', 'Ябеда', 'Якорь'], 'яб'));
 console.log(search(['Сено', 'восток', 'Верба'], 'к'));
