@@ -56,7 +56,6 @@ console.log(range(-100, 100));
 
 //8
 let currentDate = new Date();
-console.log(currentDate);
 
 let myDate = new Date();
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
@@ -70,10 +69,13 @@ let fullDate = "Сегодня: " + days[myDate.getDay()] + " - " + myDate.getDa
 console.log(fullDate);
 
 //9
-// let set_day = 73;
-// let newDate = "Через " + set_day + " будет: " + currentDate.setDate(days + set_day);
-// console.log(newDate);
-// Не понимаю, как сделать, решение пока не нашла
+let set_day = 73;
+// console.log(`Сегодня: ${days[currentDate.getDay()]} - ${currentDate.getDate()}.${(currentDate.getMonth() + 1)}.${currentDate.getFullYear()}`);
+currentDate.setDate(currentDate.getDate() + set_day);
+let NewDate = "Через " + set_day + " дня будет: " + days[currentDate.getDay()] + " - " + currentDate.getDate() +
+    "." + (currentDate.getMonth() + 1) +
+    "." + currentDate.getFullYear();
+console.log(NewDate);
 
 //10
 function dayMonthYear(Date) {
