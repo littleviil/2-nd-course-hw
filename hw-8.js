@@ -6,4 +6,11 @@ const people = [
     { name: 'Оксана', age: 47 }
 ];
 
-console.log(people.sort(human => Math.min(human)));
+people.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
+    } else if (a.age < b.age) {
+        return -1;
+    } else return 0;
+});
+console.log(people);
